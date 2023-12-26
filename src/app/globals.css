@@ -4,13 +4,13 @@
 
 :root {
     --foreground: #000000;
-    --background: #171819;
+    --background: #1d2021;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground: #000000;
-        --background: #171819;
+        --background: #1d2021;
     }
 }
 
@@ -23,8 +23,9 @@ html {
 }
 
 
-nav {
-    background-color: var(--background)
+nav, footer {
+    color: var(--foreground);
+    background-color: var(--background);
 }
 
 .nav_link::hover {
