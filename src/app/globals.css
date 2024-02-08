@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 :root {
-    --foreground: #000000;
-    --background: #1d2021;
+    --foreground: #ebdbb2;
+    --bg-1: #282828;
+    --bg-2: #1d2021;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --foreground: #000000;
-        --background: #1d2021;
+        --foreground: #ebdbb2;
+        --bg-1: #282828;
+        --bg-2: #1d2021;
     }
 }
 
 html {
     color: var(--foreground);
-    background-image: url("../../public/noise.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-color: var(--background);
+    background-color: var(--bg-1);
+    background-image: url('../../public/noise.svg')
 }
 
-
 nav, footer {
+
     color: var(--foreground);
-    background-color: var(--background);
+    background-color: var(--bg-2)
 }
 
 .nav_link::hover {
-    text-decoration: underline white;  
+    text-decoration: underline white;
 }
